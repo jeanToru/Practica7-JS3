@@ -56,12 +56,15 @@ function currencyInfo(data) {
   if (currency === "USD") {
     const CURRENCY_INFO = data.bpi.USD;
     priceElement.innerHTML = `${CURRENCY_INFO.code}${CURRENCY_INFO.symbol} ${CURRENCY_INFO.rate}`;
+    actualizarDatos();
   } else if (currency === "GBP") {
     const CURRENCY_INFO = data.bpi.GBP;
     priceElement.innerHTML = `${CURRENCY_INFO.code}${CURRENCY_INFO.symbol} ${CURRENCY_INFO.rate}`;
+    actualizarDatos();
   } else {
     const CURRENCY_INFO = data.bpi.EUR;
     priceElement.innerHTML = `${CURRENCY_INFO.code}${CURRENCY_INFO.symbol} ${CURRENCY_INFO.rate}`;
+    actualizarDatos();
   }
 }
 
